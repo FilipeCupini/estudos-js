@@ -2,9 +2,15 @@ import chalk from 'chalk';
 
 const erro = chalk.bold.red;
 const correto = chalk.bold.green;
+const padrao = chalk.blue;
+const log = console.log;
+
+
 let idade = 17;
 
-console.log(chalk.red(`Olá Mundo!`));
+
+
+log(padrao(`Olá Mundo!`));
 
 const frase = `Essa é a frase para ser exibida`;
 
