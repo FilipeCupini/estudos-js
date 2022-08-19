@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 
 const erro = chalk.bold.red;
-const correto = chalk.bold.green;
+const sucess = chalk.bold.green;
 const padrao = chalk.blue;
 const log = console.log;
 
@@ -22,11 +22,12 @@ console.log(mostrarFrase(frase));
 
 
 function verificaIdade(idade){
-    if(idade >= 18){
-        console.log(correto(`Maior de idade`))
-    } else {
-        console.log(erro(`Menor de idade`))
-    }
+    log(idade >= 18 ? sucess(`Maior de idade`) : erro(`Menor de idade`)) //Operação ternária
+    // if(idade >= 18){
+    //     console.log(correto(`Maior de idade`))
+    // } else {
+    //     console.log(erro(`Menor de idade`))
+    // }
 }
 
 verificaIdade(idade)
